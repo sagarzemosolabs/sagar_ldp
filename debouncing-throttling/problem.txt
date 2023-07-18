@@ -1,0 +1,3 @@
+
+Create a search bar that performs search requests with debouncing and throttling to improve user experience.
+(We don't need to concentrate on UI &Styling for this assignment)
