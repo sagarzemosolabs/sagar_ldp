@@ -8,7 +8,8 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import ButtonComponent from '../../atoms/Button';
 
 type ToolbarComponentProps = {
-
+  icon: any;
+  name: any;
 }
 
 export const ToolbarComponent: React.FC<ToolbarComponentProps> = (props) => {
@@ -16,8 +17,8 @@ export const ToolbarComponent: React.FC<ToolbarComponentProps> = (props) => {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
-            <IconComponent icon={<DeleteIcon /> } />
-            <ButtonComponent text='React Demo' varient='text' color='secondary'/>
+            {props.icon}
+            {props.name}
         </Toolbar>
       </AppBar>
     </Box>
